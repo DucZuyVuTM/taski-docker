@@ -8,6 +8,7 @@ FROM python:3.10
 WORKDIR /app
 # Дальнейшие инструкции будут выполняться в директории /app
 
+# Use WSGI server Gunicorn
 RUN pip install gunicorn==20.1.0
 
 # Скопировать с локального компьютера файл зависимостей
