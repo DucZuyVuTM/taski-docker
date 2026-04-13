@@ -52,3 +52,6 @@ services:
     # на порт 80 контейнера.
     ports:
       - 8000:80
+    depends_on:
+      - frontend
+      - backend
